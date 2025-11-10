@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+# Build output
+dist/
+# Environment variables
+.env
+# Prisma generated files
+backend/prisma/dev.db
+# IDE / system files
+.vscode/
+.DS_Store
+Thumbs.db
+# Log files
+*.log
+# Temporary files
+*.tmp

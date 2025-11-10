@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Global look & feel */
+:root {
+  color-scheme: light;
+}
+html, body, #root {
+  height: 100%;
+}
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+}
+
+/* Simple container helper */
+.container {
+  @apply mx-auto max-w-6xl px-4;
+}
+
+/* Card + shadow */
+.ui-card {
+  @apply rounded-2xl border bg-white shadow-sm;
+}
+
+.ui-card-pad {
+  @apply p-4 md:p-6;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition;
+}
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 active:scale-[.99];
+}
+.btn-ghost {
+  @apply bg-gray-100 text-gray-800 hover:bg-gray-200;
+}
+.btn-danger {
+  @apply bg-orange-600 text-white hover:bg-orange-700;
+}
+.btn-success {
+  @apply bg-emerald-600 text-white hover:bg-emerald-700;
+}
+
+/* Inputs */
+.input, select.input {
+  @apply w-full rounded-lg border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Table style */
+.table-wrap {
+  @apply overflow-x-auto rounded-2xl border bg-white shadow-sm;
+}
+.table {
+  @apply min-w-full text-sm;
+}
+.table thead {
+  @apply bg-gray-50;
+}
+.table th {
+  @apply px-3 py-2 text-left font-medium text-gray-600;
+}
+.table td {
+  @apply px-3 py-2;
+}
+.table tbody tr {
+  @apply border-t hover:bg-gray-50/70;
+}
+
+/* Tag/badge */
+.badge {
+  @apply inline-flex items-center rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-700;
+}
+.badge-green { @apply bg-emerald-100 text-emerald-700; }
+.badge-red   { @apply bg-red-100 text-red-700; }
